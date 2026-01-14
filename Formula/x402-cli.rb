@@ -5,21 +5,21 @@
 class X402Cli < Formula
   desc "CLI for testing x402-enabled payment-gated APIs"
   homepage "https://github.com/port402/x402-cli"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/port402/x402-cli/releases/download/v0.2.1/x402-cli_0.2.1_darwin_amd64.tar.gz"
-      sha256 "6258f0d97bb0be67df6be206366da5094d9882c0130d6553dd260dda9294e080"
+      url "https://github.com/port402/x402-cli/releases/download/v0.2.2/x402-cli_0.2.2_darwin_amd64.tar.gz"
+      sha256 "e36c4260b5e0b499455ca1937b7f62f55e771c9998df3eb437a98acbccfe0b79"
 
       def install
         bin.install "x402"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/port402/x402-cli/releases/download/v0.2.1/x402-cli_0.2.1_darwin_arm64.tar.gz"
-      sha256 "0b0a185a98bc31bb9310ddee65e621c47bac46b99710848a53216a574ba6a973"
+      url "https://github.com/port402/x402-cli/releases/download/v0.2.2/x402-cli_0.2.2_darwin_arm64.tar.gz"
+      sha256 "4ae676297a3075406c54f60bc6e747fa5e8a5dffbe7d1bbe8c5e1e53ab9345b9"
 
       def install
         bin.install "x402"
@@ -29,15 +29,15 @@ class X402Cli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/port402/x402-cli/releases/download/v0.2.1/x402-cli_0.2.1_linux_amd64.tar.gz"
-      sha256 "6c0cdbff8c96fe9bdbd3fbeeca6bac3a3c0475cb3ece49e90015196d3cc48749"
+      url "https://github.com/port402/x402-cli/releases/download/v0.2.2/x402-cli_0.2.2_linux_amd64.tar.gz"
+      sha256 "f5ad90dcdd0813134ab49f7b57e5ddc58ea61ce21f6e23ed82fa88f9e13c87e4"
       def install
         bin.install "x402"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/port402/x402-cli/releases/download/v0.2.1/x402-cli_0.2.1_linux_arm64.tar.gz"
-      sha256 "4444e0edc6106a7452b150339dc48ea903e5f50144ea47933ba422a1e44be533"
+      url "https://github.com/port402/x402-cli/releases/download/v0.2.2/x402-cli_0.2.2_linux_arm64.tar.gz"
+      sha256 "9f7e4be5fc27080b6942fe12c54f18fd36fa2c3ea41f331fbaf38f89735bdcbd"
       def install
         bin.install "x402"
       end
